@@ -47,7 +47,6 @@ var orm = {
       cb(result);
     });
   },
- 
   updateOne: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
     queryString += " SET ";
@@ -60,8 +59,7 @@ var orm = {
       }
       cb(result);
     });
-  },
-  
+  }
 };
 
 // Export the orm object for the model (burger.js).
