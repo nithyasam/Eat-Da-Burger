@@ -7,7 +7,7 @@
     {{#unless this.devoured}}
       <div class="row">
       <div class="col-lg-8">
-        <span class="label label-default burger_label">{{this.burger_name}}</span>
+        <span class="label label-default burger_label">{{this.id}}. {{this.burger_name}}</span>
       </div>
       <div class="col-lg-4">
         <form action="/{{this.id}}?_method=PUT" method="POST">
@@ -28,7 +28,7 @@
   {{#each burgers}}
     {{#if this.devoured}}
         <br>
-        <span class="label label-success burger_label">{{this.burger_name}}</span>
+        <span class="label label-success burger_label">{{this.id}}. {{this.burger_name}}</span>
         <br>
     {{/if}}
   {{/each}}
